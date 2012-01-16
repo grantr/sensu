@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
 
   s.add_runtime_dependency "bundler"
   s.add_runtime_dependency "eventmachine", "~> 1.0.0.beta.4"
-  s.add_runtime_dependency "amqp", "0.7.4"
+  s.add_runtime_dependency "amqp", ">= 0.9.0"
   s.add_runtime_dependency "json"
   s.add_runtime_dependency "hashie"
   s.add_runtime_dependency "cabin", "0.1.8"
