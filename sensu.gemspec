@@ -12,21 +12,21 @@ Gem::Specification.new do |s|
   s.license     = "MIT"
   s.has_rdoc    = false
 
-  s.add_dependency("bundler")
-  s.add_dependency("eventmachine", "~> 1.0.0.beta.4")
-  s.add_dependency("amqp", "0.7.4")
-  s.add_dependency("json")
-  s.add_dependency("hashie")
-  s.add_dependency("cabin", "0.1.8")
-  s.add_dependency("ruby-redis")
-  s.add_dependency("rack", "~> 1.3.4")
-  s.add_dependency("async_sinatra")
-  s.add_dependency("thin")
+  s.add_runtime_dependency "bundler"
+  s.add_runtime_dependency "eventmachine", "~> 1.0.0.beta.4"
+  s.add_runtime_dependency "amqp", "0.7.4"
+  s.add_runtime_dependency "json"
+  s.add_runtime_dependency "hashie"
+  s.add_runtime_dependency "cabin", "0.1.8"
+  s.add_runtime_dependency "ruby-redis"
+  s.add_runtime_dependency "rack", "~> 1.3.4"
+  s.add_runtime_dependency "async_sinatra"
+  s.add_runtime_dependency "thin"
 
-  s.add_development_dependency("rake")
-  s.add_development_dependency("em-spec")
-  s.add_development_dependency("em-http-request")
-  s.add_development_dependency("rbtrace")
+  s.add_development_dependency "rake"
+  s.add_development_dependency "em-spec"
+  s.add_development_dependency "em-http-request"
+  s.add_development_dependency "rbtrace"
 
   s.files         = Dir.glob("{bin,lib}/**/*") + %w[sensu.gemspec README.org MIT-LICENSE.txt]
   s.executables   = Dir.glob("bin/**/*").map { |file| File.basename(file) }
